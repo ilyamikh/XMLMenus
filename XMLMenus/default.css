@@ -1,0 +1,54 @@
+﻿body {
+}
+
+#page {
+    background-color: grey;
+    position: absolute;
+    width: 11in;
+    height: 8in;
+}
+
+#info {
+    position: relative;
+    background-color: lightblue;
+    float: left;
+    width: 50%;
+    height: 10%;
+    text-align: center;
+}
+
+#summary {
+    position: relative;
+    background-color: lightgreen;
+    float: right;
+    width: 50%;
+    height: 10%;
+}
+
+table {
+    font-size: 13px;
+    empty-cells: show;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    border: medium solid;
+}
+
+td {
+    border: thin solid;
+    white-space: nowrap;
+}
+
+.darkCell {
+    background-color: darkgray;
+}
+
+.rightEdge {
+   border-right: thick solid;
+}
+
+.leftEdge {
+    border-left: thick solid;
+}
