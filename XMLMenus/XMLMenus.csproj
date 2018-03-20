@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E0D39FC8-9138-4F0C-A40F-676279B6D7E2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XMLMenus</RootNamespace>
+    <AssemblyName>XMLMenus</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGroup.Designer.cs">
+      <DependentUpon>AddGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addIngredientDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addIngredientDialog.Designer.cs">
+      <DependentUpon>addIngredientDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMeal.Designer.cs">
+      <DependentUpon>AddMeal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMenu.Designer.cs">
+      <DependentUpon>AddMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMenuItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMenuItem.Designer.cs">
+      <DependentUpon>AddMenuItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassMealCount.cs" />
+    <Compile Include="CreateMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateMenu.Designer.cs">
+      <DependentUpon>CreateMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DayCount.cs" />
+    <Compile Include="Ingredient.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="ModifyDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyDay.Designer.cs">
+      <DependentUpon>ModifyDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyIngredientDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyIngredientDialog.Designer.cs">
+      <DependentUpon>ModifyIngredientDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyMeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyMeal.Designer.cs">
+      <DependentUpon>ModifyMeal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyMenu.Designer.cs">
+      <DependentUpon>ModifyMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyMenuItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyMenuItem.Designer.cs">
+      <DependentUpon>ModifyMenuItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewDay.Designer.cs">
+      <DependentUpon>NewDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewMonthDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewMonthDialog.Designer.cs">
+      <DependentUpon>NewMonthDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewWeek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewWeek.Designer.cs">
+      <DependentUpon>NewWeek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.cs" />
+    <Compile Include="ReportGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportGenerator.Designer.cs">
+      <DependentUpon>ReportGenerator.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddGroup.resx">
+      <DependentUpon>AddGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addIngredientDialog.resx">
+      <DependentUpon>addIngredientDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMeal.resx">
+      <DependentUpon>AddMeal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMenu.resx">
+      <DependentUpon>AddMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMenuItem.resx">
+      <DependentUpon>AddMenuItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateMenu.resx">
+      <DependentUpon>CreateMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyDay.resx">
+      <DependentUpon>ModifyDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyIngredientDialog.resx">
+      <DependentUpon>ModifyIngredientDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyMeal.resx">
+      <DependentUpon>ModifyMeal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyMenu.resx">
+      <DependentUpon>ModifyMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyMenuItem.resx">
+      <DependentUpon>ModifyMenuItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewDay.resx">
+      <DependentUpon>NewDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewMonthDialog.resx">
+      <DependentUpon>NewMonthDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewWeek.resx">
+      <DependentUpon>NewWeek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportGenerator.resx">
+      <DependentUpon>ReportGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
